@@ -25,6 +25,7 @@ export default function Task({ task, id, handleDelete, handleComplete }) {
           className="ms-5"
           type="checkBox"
           value={completed}
+          checked={completed}
           onChange={(e) => markComplete(e.target.checked)}
         />
         <button className="btn btn-danger  ms-5 mt-1" onClick={deleteTask}>

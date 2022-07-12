@@ -13,6 +13,7 @@ function App() {
   const handleDelete = (id) => {
     const currentTasks = [...tasks];
     const deleteId = id;
+    handleComplete(false, deleteId);
     const newTasks = currentTasks.filter(
       (task) => currentTasks.indexOf(task) !== deleteId - 1
     );
